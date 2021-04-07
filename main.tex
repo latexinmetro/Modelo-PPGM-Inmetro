@@ -1,0 +1,309 @@
+% Este é o arquivo principal, onde o seu trabalho é gerado
+% Se tiver dúvidas, leia os comentários ou as referências
+% da biblioteca ABNTeX 2.
+% Ou também consulte http://aureliocasoni.xyz/latex
+\documentclass[12pt,oneside,chapter=TITLE,
+    section=TITLE,a4paper,english,brazil,sumario=abnt-6027-2012,]{abntex2}
+\tracingoutput
+\tracingmacros
+
+% Remove as advertências bizarras de inclusão de pacotes em subpastas. 
+\usepackage{silence}
+%Disable all warnings issued by latex starting with "You have..."
+\WarningFilter{latex}{You have requested package}
+
+\usepackage{include/unigran}
+
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+
+\usepackage{adjustbox}
+
+\usepackage{longtable,ltcaption} % para as tabelas
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+
+\usepackage{helvet}			% Usa a fonte Latin Modern			
+%\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+			% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{subfig}
+%\captionsetup[subfigure]{labelfont=rm}
+\newcommand{\subfigref}[1]{\hyperref[#1]{Figura~\ref*{#1}}}
+\usepackage{float}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\usepackage{varwidth}
+\usepackage{multirow} % Mesclar linhas
+\usepackage{microtype} 			% para melhorias de justificação
+
+\usepackage{pdfpages}  
+\usepackage{tocloft}                                % Permite alterar a formatação do Sumário
+\usepackage{etoolbox}                               % Usado para alterar a fonte da Section no Sumário
+
+\usepackage{lipsum}
+% ---
+% Pacotes de citações
+% ---
+%\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf, abnt-etal-text=emph, abnt-dont-use-etal=yes, bibjustif]{abntex2cite}	         % Citações padrão ABNT
+
+\usepackage{include/url6023} % remove os <> entre a Url, segundo a nova versão da NBR 6023:2018
+% se, em uma futura atualização completa do Abntex, isso causar erros na geração da Url, pode comentar na linha acima
+% https://github.com/abntex/abntex2/issues/210
+
+
+% ---
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+%\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+%\renewcommand{\backref}{}
+% Define os textos da citação
+% \renewcommand*{\backrefalt}[4]{
+% 	\ifcase #1 %
+%		Nenhuma citação no texto.%
+%	\or
+%		Citado na página #2.%
+%	\else
+%		Citado #1 vezes nas páginas #2.%
+%	\fi}%
+% ---
+%configuração para a lista de quadros
+%%% nome para ser usado no sumário
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Informação para configuração das figuras
+\newcommand{\source}[1]{\caption*{Fonte: {#1}} }
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% Preencha com bastante atenção!
+% ---
+% Título do seu trabalho
+\titulo{Título da tese ou dissertação}
+
+% Nome(s) do(s) autor(es) do seu trabalho. Se tiver mais de um, separe-os com \\
+% Se não for uma monografia, coloque o seu RGM
+\autor{Nome do candidato}
+
+% Exemplo de dois autores - Ponha um \\ entre eles e remova os %
+% \autor{JOSÉ CARLOS ALVES RGM - 99.603\\
+% FULANO - RGM xx.XXX}
+
+% Local, nem precisa mexer
+\local{Duque de Caxias - RJ}
+
+% Ano do seu trabalho
+\data{20aa}
+
+%\renewcommand{\orientadorname}{Orientadora:} %caso seja mulher, apague o % no início da linha
+
+% Nome do seu orientador
+\orientador{Nome do Orientador(a)}
+
+%\renewcommand{\coorientadorname}{Coorientadora:} %caso seja mulher
+% Coorientador, se não tiver, coloque um % antes dessa linha
+\coorientador{Nome do Coorientador(a)}
+ 
+\tipotrabalho{[Dissertação de Mestrado][Tese de doutorado][Monografia para Qualificação ao Doutorado]}
+% Se não for monografia, coloque Pré-Projeto, Relatório, Trabalho, etc
+
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{\imprimirtipotrabalho apresentada ao Programa de Pós-Graduação em [Biotecnologia] [Metrologia] [Metrologia e Qualidade] do Instituto Nacional de Metrologia, Qualidade e Tecnologia como parte dos requisitos para a obtenção do título de [Mestre] [Doutor] em Ciências.}
+% ---
+
+\def \b{$\bullet$}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document} %Não remova esta linha!
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\pretextual
+
+\pagenumbering{roman}
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (se você digitar \imprimirfolhaderosto* indica que haverá a ficha bibliográfica)
+% Mas como a ficha é feita depois, não precisa colocar
+% ---
+\imprimirfolhaderosto
+% ---
+
+\include{pre-textuais/ficha-catalografica}
+\include{pre-textuais/folha-de-aprovacao}
+
+% Errata, só é aplicado caso haja um erro no seu trabalho
+%\include{pre-textuais/errata}
+
+
+% Os três itens a seguir, são mais usuais se você estiver redigindo sua monografia.
+\include{pre-textuais/dedicatoria}
+\include{pre-textuais/agradecimentos}
+\include{pre-textuais/epigrafe}
+
+% ---
+% RESUMOS
+% ---
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+
+% Inclui os arquivos de resumo
+% Usual apenas para monografia, ou se seu professor exigir
+% Se não precisar, apague a(s) linha(s) ou coloque um % antes
+\include{pre-textuais/resumo}
+\include{pre-textuais/abstract}
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+% inserir lista de quadros
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listofquadros*
+\cleardoublepage
+
+% ---
+% ---
+% inserir lista de tabelas
+% ---
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+% ---
+
+% ---
+% insere a lista de algoritmos
+% veja o algoritmo de exemplo e as linhas 250 a 275 do arquivo 
+% unigran.sty para saber as palavras-chave
+% ---
+%\imprimirlistadealgoritmos
+
+% ---
+% inserir lista de codigos-fonte
+% ---
+%\imprimirlistadecodigosfonte
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\input{pre-textuais/siglas.tex}
+% ---
+% inserir lista de simbolos
+% ---
+\input{pre-textuais/simbolos}
+% ---
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsnamebookmark}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+%reconta da primeira página
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Aqui inclui os capítulos
+% Eles estão dentro da pasta capitulos
+
+\include{capitulos/capitulo1}
+
+\include{capitulos/capitulo2}
+
+%\include{capitulos/capitulo3}
+
+%\include{capitulos/capitulo4}
+
+%\include{capitulos/capitulo5}
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% Se não tiver, pode apagar tudo até a penúltima linha
+% ----------------------------------------------------------
+\postextual
+
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+
+\bibliography{referencias}
+
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%\glossary
+
+
+% Apêndices e anexos
+% Segundo a NBR 14724 de dezembro de 2005, a diferença primordial entre Anexo e Apêndice é que o Anexo é um texto ou documento não elaborado pelo autor do Trabalho Científico (TC) (monografia, tese, etc.) e o Apêndice é um texto ou documento elaborado pelo autor do TC
+% http://www.portalsaofrancisco.com.br/portugues/anexos-e-apendices
+% Não é obrigatório
+
+%\imprimirapendices %insere uma folha com o texto apendices para separar os apendices do restante do texto
+\apendices
+% Adicione aqui os apendices do seu trabalho
+\input{pos-textuais/apendice1}
+        
+%\imprimiranexos %insere uma folha com o texto anexos para separar os anexos do restante do texto
+\anexos
+\input{pos-textuais/anexo1}
+        
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+% \phantompart
+% \printindex
+%---------------------------------------------------------------------
+
+%Não apague essa linha
+\end{document}

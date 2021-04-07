@@ -1,0 +1,77 @@
+
+\section{Inserindo uma imagem}
+
+Donec sit amet ex ante. Quisque porttitor velit diam, a maximus purus porta non. Sed vel massa pulvinar, tristique nulla id, convallis enim. Vestibulum hendrerit tempor faucibus. In lobortis eros felis, ac interdum velit tincidunt eget. Suspendisse posuere hendrerit purus, vitae blandit massa laoreet vitae. Donec iaculis consectetur erat, sed varius est pellentesque id. Donec at metus et nibh convallis ullamcorper. Maecenas rutrum scelerisque diam id accumsan. Phasellus non urna venenatis, efficitur urna nec, laoreet justo. Conforme \autoref{motor}:
+
+%Exemplo de Figura
+\begin{figure}[htbp]
+    \caption{Bobby Icon - Um exemplo de como colocamos uma imagem...}
+	\centering
+		\includegraphics{imagens/bobby-icon.png}
+	\legend{Fonte: Internet}
+	\label{fig:image1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \caption{Exemplo de Motor}
+	\centering
+		\includegraphics[scale=0.5]{imagens/motor.jpeg}
+	\legend{Fonte: Internet}
+	\label{motor}
+\end{figure}
+
+
+Donec sit amet ex ante. Quisque porttitor velit diam, a maximus purus porta non. Sed vel massa pulvinar, tristique nulla id, convallis enim. Vestibulum hendrerit tempor faucibus. In lobortis eros felis, ac interdum velit tincidunt eget. Suspendisse posuere hendrerit purus, vitae blandit massa laoreet vitae. Donec iaculis consectetur erat, sed varius est pellentesque id. Donec at metus et nibh convallis ullamcorper. Maecenas rutrum scelerisque diam id accumsan. Phasellus non urna venenatis, efficitur urna nec, laoreet justo.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida sapien condimentum, tempor lectus vel, eleifend elit. Donec non aliquam elit. Nam at sapien sed felis fringilla aliquet ut quis mi. Sed pulvinar vulputate ante, et tincidunt tellus facilisis eget.
+
+%Exemplo de Tabela
+\begin{table}[!ht]	
+		\centering
+		\Caption{Exemplo de tabela}		
+		\IBGEtab{}{
+			\begin{tabular}{cll}
+				\toprule
+				Ranking & Exon Coverage & Splice Site Support \\
+				\midrule \midrule
+				E1 & Complete coverage by a single transcript & Both splice sites\\
+				E2 & Complete coverage by more than a single transcript & Both splice sites\\
+				E3 & Partial coverage & Both splice sites\\
+				E4 & Partial coverage & One splice site\\
+				E5 & Complete or partial coverage & No splice sites\\
+				E6 & No coverage & No splice sites\\
+				\bottomrule
+			\end{tabular}
+		}{
+		\Fonte{Elaborado pelo autor}
+		\label{tab:exemplo-1}
+	}
+\end{table}
+
+
+\lipsum[24] Veja \autoref{tabela}:
+
+\begin{table}[!ht]
+\centering
+\caption{Exemplo 2}
+\label{tabela}
+\begin{tabular}{ll}
+\hline
+\textbf{Ano} & \textbf{Quantidade} \\ \hline
+2010         & 50                  \\ \hline
+2012         & 200                 \\ \hline
+2014         & 500                 \\ \hline
+2016         & 300                 \\ \hline
+\end{tabular}
+\legend{Fonte: exemplo}
+\end{table}
+
+\section{Testes Finais}
+
+Como disse \citeonline{LoremIpsum}: \lq\lq Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida sapien condimentum, tempor lectus vel, eleifend elit. Donec non aliquam elit. Nam at sapien sed felis fringilla aliquet ut quis mi. Sed pulvinar vulputate ante, et tincidunt tellus facilisis eget.\rq\rq
+
+\begin{citacao}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida sapien condimentum, tempor lectus vel, eleifend elit. Donec non aliquam elit. Nam at sapien sed felis fringilla aliquet ut quis mi. Sed pulvinar vulputate ante, et tincidunt tellus facilisis eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida sapien condimentum, tempor lectus vel, eleifend elit. Donec non aliquam elit. Nam at sapien sed felis fringilla aliquet ut quis mi. Sed pulvinar vulputate ante, et tincidunt tellus facilisis eget.
+\end{citacao}
+
+\lipsum[90-91]
