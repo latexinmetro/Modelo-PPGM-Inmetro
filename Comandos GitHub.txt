@@ -1,0 +1,13 @@
+Comandos para usar o github
+
+git pull origin HEAD			->atualiza o repositório local com a ultima versão do repositório online
+git push origin HEAD			->envia as atualizações para o repositório online
+git commit -m "texto"			->insere um texto sobre a atualização
+git diff				->verifica se há alterações
+git status				->verifica o status
+git log					->fornece o log com todas as alterações realizadas e os códigos necessários para reverter alterações
+
+
+Verificar alterações:
+https://github.com/latexinmetro/Modelo
+ir em pull requests
