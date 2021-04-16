@@ -36,7 +36,7 @@ Naturalmente, a ortografia correta é exigência absoluta. Evite anglicismos ou 
  	  \caption{Capa da 5ª edição do Vocabulário Ortográfico da Língua Portuguesa}
 		\includegraphics{imagens/capavolp.png}
 	\label{fig:capavolp}
-  \source{disponível em \url{http://www.academia.org.br/nossa-lingua/vocabulario-ortografico}..}
+  \source{disponível em \url{http://www.academia.org.br/nossa-lingua/vocabulario-ortografico}.}
 \end{figure}
 
 Segundo a figura \ref{fig:capavolp}.
@@ -48,17 +48,18 @@ Empregue sempre a gramática correta no seu texto. Estilo é uma forma individua
 A seguir são apresentados alguns erros típicos de gramática que não devem ocorrer e algumas expressões ou termos que podem ser escritos por questões de estilo.
 
 \begin{enumerate}[label=\alph*)]
-\item {\bfseries Uso da abreviação “etc.”}
+
+{\bfseries \item  Uso da abreviação “etc.”}
 
 O termo “etc.” é a abreviação da expressão em latim “et cetera”, que significa “e outras coisas”. Como trata-se de uma abreviação, deve terminar com um ponto mesmo que esteja no meio da frase, seguindo-se por letra minúscula na palavra subsequente. Se terminar uma frase, basta o ponto de final de período. Como etc. já traz consigo o “e”, não deve ser escrito “e etc.”, nem tampouco deve ser precedido por vírgula. O uso de vírgula antes do etc. pode ser aceito na gramática moderna, mas a linguagem formal tradicional não a permite. Evite usar vírgula antes do etc. Nunca utilize reticências (“...”) após o etc.
 
-\item {\bfseries Separar sujeito do predicado em uma oração}
+{\bfseries \item  Separar sujeito do predicado em uma oração}
 
 O correto uso de vírgulas num texto técnico não é difícil, mas requer a atenção para algumas regras básicas. Um dos erros mais comuns é separar o sujeito do predicado por vírgulas, o que é um erro. Por exemplo:
 “As pesquisas realizadas, indicaram que o resultado foi positivo.”
 O sujeito desta frase é “as pesquisas realizadas” e o predicado é “indicaram que o resultado foi positivo”. Assim sendo, não pode ser utilizada vírgula para os separar.
 
-\item {\bfseries Uso do advérbio “mesmo” como pronome}
+{\bfseries \item  Uso do advérbio “mesmo” como pronome}
 
 Esse é um erro fatal que emporcalha o texto. Infelizmente, uma legislação municipal no Rio de Janeiro (e em alguns outros munícipios) propagou um erro de gramática, nos obrigando a ler: “Antes de entrar no elevador, verifique se o mesmo está parado neste andar”. Nesse caso, o termo “mesmo” traz o sentido de um pronome, que se trata de uma classe gramatical da qual o termo “mesmo” não faz parte. O correto seria escrever “Antes de entrar no elevador, verifique se ele está parado neste andar”.
 
@@ -67,13 +68,13 @@ Dica: sempre que for usar o termo “mesmo” ou “mesma”, verifique se pode 
 
 A conjunção aditiva “e” não deve ser utilizado para iniciar. Conjunções são termos que ligam duas ou mais palavras ou orações das mesmas classes gramaticais. Assim sendo, não é gramaticalmente correto iniciar uma frase com conjunção aditiva.
 
-\item {\bfseries Uso de “e/ou”}
+{\bfseries \item  Uso de “e/ou”}
 
 Esse é um tema um tanto controverso. A norma culta da língua portuguesa prescinde do “e/ou” uma vez que o “ou” é não excludente. Isto é, “ou” é uma disjunção não exclusiva, portanto é equivalente ao “e/ou”. Na norma culta, a disjunção exclusiva é dada pelo “ou ... ou”. Por exemplo, para deixar a entender que um laboratório é exclusivamente de calibração ou exclusivamente de ensaio, a norma culta define que seria escrito assim: “... laboratório ou de ensaio ou de calibração”, ou alguma redação semelhante.
 
 Entretanto, vale mencionar que hoje em dia se aceita o “e/ou” em linguagem cotidiana, portanto se trata de estilo usar ou não. Como sugestão, empregue o “e/ou” apenas em casos que a ausência do “e/” venha a trazer confusão no entendimento do texto. Repetindo: o “ou” na língua portuguesa tem o sentido de não exclusividade, portanto já contempla o sentido do “e/”.
 
-\item {\bfseries Diferença entre ilustração e tabela}
+{\bfseries \item  Diferença entre ilustração e tabela}
 
 Tabelas são elementos da estrutura de um texto técnico nas quais as principais informações transmitidas são números. Por outro lado, ilustrações podem ser desenhos, esquemas, fluxogramas, fotografias, gráficos, mapas, organogramas, plantas, quadros, retratos etc. Todos estes elementos podem ser genericamente denominados ilustrações, ou especificamente para cada tipo de ilustração. Cada tipo de elemento deve ser enumerado independentemente por ordem de aparecimento no texto. Embora não sejam elementos obrigatórios, geralmente são inseridas listas de tabelas e de ilustrações. A seguir serão apresentados exemplos de tabela, quadro e figura.
 
@@ -138,7 +139,7 @@ Data      & Compra           & Venda            \\
 \begin{figure}[htbp]
     \caption{Exemplo de Figura.}
 	\centering
-		\includegraphics{imagens/barco.png}
+		\includegraphics[scale=1]{imagens/barco.png}
 	\source{elaboração própria.}
 	\label{fig:barco}
 \end{figure}
@@ -147,12 +148,98 @@ Observe que tanto tabelas quanto ilustrações (todos os tipos) devem ter a segu
 
 Quanto à formatação, a tabela não deve ter linhas verticais, a menos que sejam relevantes para melhor apresentar as informações. São obrigatórias três linhas horizontais em uma tabela: a que delimita o topo (ou início) da tabela; a que separa o topo do corpo (ou meio) da tabela; e a linha inferior que delimita o final da tabela. Outras linhas horizontais podem ser necessárias para melhor apresentação das informações, mas são dispensáveis. O documento que rege a elaboração de tabelas é o guia gerado pelo IBGE (IBGE, 1993).
 
-\item {\bfseries Equações e fórmulas}
+{\bfseries \item  Equações e fórmulas}
+
 Todas as unidades devem ser baseadas na edição atual do Sistema Internacional de Unidades (SI). A seguir é apresentado um modelo para equações e fórmulas. As equações devem ser numeradas sequencialmente ao longo do texto e referenciadas no texto.
 
 \begin{equation}
-(x+a)^{n}=\sum_{k=0}^{n} 2^{-n}
-\label{eqcargacap}
+(x+a)^{n}= \sum_{k=0}^{n}\binom{n}{k}x^{k}a^{n-k}
+\label{equexemplo}
 \end{equation}
+
+
+
+
+Na equação \ref{equexemplo}, \begin{math}x\end{math} é uma variável, \begin{math}a\end{math} é uma constante, \begin{math}n\end{math} é o expoente, \begin{math}k\end{math} é o contador e \begin{math}\sum\end{math} é o símbolo de somatório.
+
+{\bfseries \item  Separação de capítulos}
+
+Cada capítulo da sua monografia deverá se iniciar em uma página distinta da do capítulo anterior. Para isso, não acrescente linhas em branco ao final do capítulo até o título do capítulo subsequente “pular” para a próxima página. Os editores de texto, incluindo o MS Word, dispõem de uma ferramenta denominada “inserir quebra de página”. Fica muito mais elegante e evita perda de formatação caso alguma linha seja retirada ou inserida no capítulo.
+
+{\bfseries \item  Manter linhas de cabeçalho e títulos com o texto que o sucede}
+
+Um erro infelizmente recorrente é a presença de “linhas soltas” no texto. Por exemplo, se for introduzido uma seção no final de uma página, pode ocorrer que o parágrafo subsequente ao título da seção “pule” para a página seguinte. Para evitar isso, use a ferramenta de edição “Manter com o próximo”, ou outra denominação do seu editor de texto. Assim, caso a formatação do texto seja alterada, automaticamente o título da seção irá acompanhar o parágrafo que a sucede.
+
+A mesma observação vale para títulos de tabelas e ilustrações. Use da ferramenta “Manter com o próximo” para que o título fique sempre acima e na mesma página do elemento que o sucede, assim como o próprio elemento com a descrição da fonte, elemento obrigatório e que deve suceder a tabela ou ilustração.
+
+É importante NÃO ACRESCENTAR LINHAS ENTRE AS DESCRIÇÕES DAS TABELAS E ILUSTRAÇÕES E ANTES DA DESCRIÇÃO DA FONTE.
+
+{\bfseries \item  Uso de advérbios}
+
+Os advérbios são fundamentais para uma boa escrita. O grande problema é usá-lo apropriadamente. Recomenda-se uma revisão do tema em alguma gramática de boa qualidade. Essencialmente, deve-se atentar para alguns vícios de linguagem recorrentes. Advérbios são elementos gramaticais que, estando próximos (“ad”) a um verbo, adjetivo alteram seu significado (incluindo um outro advérbio). Um erro comum é usar o advérbio de lugar “onde” com função distinta da sua proposta. Eis um uso inapropriado do adverbio “onde”: “Eu fiz um experimento semana passada onde os resultados foram favoráveis”. Mais correto seria “... semana passada quando os resultados ...” (advérbio de tempo e não de lugar).
+
+Outro erro comum é usar a locução adverbial “através de” com o sentido de “por meio de”. “Através” tem sentido de atravessar, enquanto “por meio de” é uma locução adverbial de modo, podendo ser substituída por “do seguinte modo” ou “de tal maneira”.
+
+{\bfseries \item  Siglas}
+
+O correto é escrever o nome por extenso e a respectiva sigla em seguida, e não o inverso. Por exemplo: Agência Nacional de Aviação Civil (ANAC); Instituto Nacional de Metrologia, Qualidade e Tecnologia (Inmetro).
+É possível usar a sigla em inglês e fazer a tradução na descrição. Por exemplo: Comissão Internacional de Eletrotécnica (IEC, do inglês International Eletrotechnical Commission). A partir desta definição, pode ser utilizada a sigla IEC normalmente.
+
+{\bfseries \item  Plural de siglas}
+
+Gramaticalmente, não está errado escrever siglas no plural, mas é uma questão de estilo. Muitos leitores preferem a forma clássica de representar siglas apenas na sua forma original, isto é, no singular. Por exemplo, “Unidade Organizacional” tem como sigla “UO”. Ao se referir a mais de uma UO, o autor pode optar por escrever UOs ou manter a sigla original UO. O sentido da oração se dará pelo artigo que precederá a sigla ou pela flexão do verbo, conforme seja a construção da oração. Veja os exemplos a seguir:
+
+“A UO tem 50 servidores.”
+
+“A UO terá seu orçamento anual majorado em 10\%.”
+
+“As UO têm 50 servidores cada.”
+
+“As UO terão seus orçamentos anuais majorados em 10\%.”
+
+Não há dúvidas que os dois primeiros exemplos dizem respeito a apenas uma UO, enquanto os outros dois exemplos se referem a mais de uma UO. Portanto não é necessário acrescentar a letra “s” após a sigla para transmitir ao leitor a informação que são mais de uma UO.
+
+Observação importante: é absolutamente errado usar ’s (apóstrofe seguido da letra “s”) para representar plural de sigla. Por exemplo, está errado escrever “UO’s”.
+
+Ainda em relação ao uso de siglas, estas devem vir por extenso no ponto do texto onde aparecem pela primeira vez. Por exemplo: Coordenação Geral de Acreditação (Cgcre).
+
+{\bfseries \item  Plural de símbolos}
+
+Símbolos não têm plural! A observação é importante, inclusive, para símbolos das unidades do SI. Não existe plural de A ou N, que são os símbolos das unidades ampere (grandeza corrente elétrica) e newton (grandeza força). Entretanto, à unidade escrita por extenso deve ser acrescentada a letra “s” para representar seu plural: amperes e newtons.
+
+{\bfseries \item  Use linguagem formal e não coloquial}
+
+Expressões coloquiais como, por exemplo “tipo assim”, “levantar as informações” etc. não devem ser empregadas. O texto fica pobre e não irá satisfazer o leitor. Essas expressões são aceitas em textos literários, naturalmente, mas não em textos técnicos e científicos.
+
+{\bfseries \item  Vícios de linguagem}
+
+Na linguagem vulgar ou coloquial, o uso de determinadas construções gramaticais ou de estilo são admitidas. Entretanto, em textos técnicos isso não é permitido. A seguir são apresentados alguns exemplos mais comuns. O autor da monografia deve estar atento para não cometer esses ou outros vícios de linguagem.
+\begin{itemize}
+    \item Usar “através” ao invés de “por meio de”. Exemplo: “As medições foram feitas através de um multímetro”. O correto seria “As medições foram feitas por meio de um multímetro” ou “... com uso de ...”.
+    \item 	A expressão “período de tempo” está incorreta. “Período” é uma grandeza equivalente a “tempo”.
+\end{itemize}
+
+{\bfseries \item  Referências bibliográficas}
+
+A norma ABNT NBR 6023 apresenta como devem ser elaboradas as referências bibliográficas, elemento pós-textual obrigatório. A citação no corpo do texto deve seguir o previsto na ABNT NBR 10520. Apesar de haver algumas formas de se citarem as referências (sistema de chamadas), a preferencial para monografias é “AUTOR-DATA” (veja cláusula 6.1 da ABNT NBR 10520). A manutenção das referências em um texto longo é muito mais simples quando a lista das referências está em ordem alfabética e não em ordem de aparição no texto. Estude as normas ABNT NBR 10520 e ABNT NBR 6023 para citar apropriadamente as referências na monografia.
+
+Vale observar que o capítulo REFERÊNCIAS BIBLIOGRÁFICAS tem o mesmo nível hierárquico das seções principais (INTRODUÇÃO, REVISÃO BIBLIOGRÁFICA, METODOLOGIA, RESULTADOS, DISCUSSÃO e CONCLUSÃO), mas não é numerado.
+
+A lista de referências diz muito sobre a qualidade do artigo. Deve-se evitar citações bibliográficas em português a menos que sejam estritamente necessárias. Normas, por exemplo, é sempre mais aconselhável citar a versão internacional, se houver, ou similar. Nunca cite teses ou dissertações. Uma boa tese ou dissertação terá gerado artigo em períódico. Procure artigos dos autores daquela tese ou dissertação sobre o assunto. Evite ao máximo citar artigos de congressos. Revistas técnicas e científicas são a melhor fonte de bibliografia técnica e acadêmica, preferencialmente com DOI. Livros, cite pouco e apenas os clássicos.
+
+{\bfseries \item  Coesão textual}
+
+Ao escrever, lembre-se que seu texto como um todo deve fazer sentido para o leitor. O autor, num texto dissertativo (ou mesmo numa tese), busca convencer o leitor acerca de um determinado assunto. Por isso, evite ao máximo inserir mudanças repentinas de assunto ao longo do seu texto. Caso seja preciso mudar de assunto numa mesma seção do seu trabalho, faça-o de maneira elegante, como por exemplo por meio da inserção de parágrafos de ligação.
+
+A transição na exposição de ideias ao longo do seu texto deve ser feita com coerência e lógica, de forma que o texto seja coeso (ou contínuo).Na língua portuguesa há elementos que conferem coesão a um texto. Tratam-se de expressões que estabelecem a transição de ideias entre frases e parágrafos, como pronomes, advérbios e conjunções.
+
+    \begin{quadro}[h!]
+        \caption{Exemplos de elementos de coesão textual.}
+        % coloque aqui o seu quadro
+        \centering
+		\includegraphics[scale=0.8]{imagens/quadro2.png}
+	    \label{qd:grandezas}
+	    \source{adaptado de \citeonline{Borges}, com acréscimos de autoria própria.}
+    \end{quadro}
 
 \end{enumerate}
