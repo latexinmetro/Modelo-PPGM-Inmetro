@@ -46,17 +46,22 @@
     \center
     \vspace{0.6cm}
    
-    {{Instituto Nacional de Metrologia, Qualidade e Tecnologia – INMETRO}}
-    \vspace*{3.5cm}
+    {{\textbf{Instituto Nacional de Metrologia, Qualidade e Tecnologia – INMETRO}}}
+    
+    \vfill
 
     {\bfseries\large\imprimirautor}
 
     \vfill
+    
     \begin{center}
     \bfseries\Large\MakeTextUppercase{\imprimirtitulo}
     \end{center}
+    
     \vfill
-
+	
+	\vfill
+	
     \bfseries\large{\imprimirlocal}\par
     \bfseries{\imprimirdata}
   \end{capa}
@@ -230,7 +235,7 @@
 \renewcommand{\ABNTEXchapterfontsize}{\normalsize}
 
 % Estilo da section 1.1
-\renewcommand{\ABNTEXsectionfont}{\normalfont}
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
 \renewcommand{\ABNTEXsectionfontsize}{\normalsize}
 
 % Estilo da subsection 1.1.1
@@ -238,7 +243,7 @@
 \renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
 
 % Estilo da subsection 1.1.1.1
-\renewcommand{\ABNTEXsubsubsectionfont}{\normalfont}
+\renewcommand{\ABNTEXsubsubsectionfont}{\bfseries}
 \renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
 
 % Estilo da subsection 1.1.1.1
@@ -817,6 +822,14 @@
 }
 \makeatother
 % ---
+
+%Para que a nota de rodapé apareça onde ela pertence, e não colada ao texto, a seguinte linha de comando é usada:
+
+\renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt}
+
+%Esta técnica (mas bem "dica") foi encontrada em: https://tex.stackexchange.com/questions/4902/why-is-my-footnote-glued-to-the-text
+
+
 % ---
 % FIM DAS CUSTOMIZACOES PARA A UNIVERSIDADE XXX
 % ---

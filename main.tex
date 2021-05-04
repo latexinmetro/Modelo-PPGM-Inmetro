@@ -134,6 +134,9 @@
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
 \preambulo{\imprimirtipotrabalho apresentada ao Programa de Pós-Graduação em [Biotecnologia] [Metrologia] [Metrologia e Qualidade] do Instituto Nacional de Metrologia, Qualidade e Tecnologia como parte dos requisitos para a obtenção do título de [Mestre] [Doutor] em Ciências.}
+
+%As informações da FOLHA DE ROSTO (em português e inglês, respectivamente) devem ser preenchidas no arquivo "unigran" que se encontra na pasta de "include".
+
 % ---
 
 \def \b{$\bullet$}
@@ -152,7 +155,7 @@
 % ----------------------------------------------------------
 \pretextual
 
-\pagenumbering{roman}
+%\pagenumbering{roman}
 
 % ---
 % Capa
@@ -248,23 +251,23 @@
 \textual
 
 %reconta da primeira página
-\pagenumbering{arabic}
-\setcounter{page}{1}
+%\pagenumbering{arabic}
+%\setcounter{page}{1}
 
 % Aqui inclui os capítulos
 % Eles estão dentro da pasta capitulos
 
-\include{capitulos/capitulo1}
+\include{textuais/capitulo1}
 
-\include{capitulos/capitulo2}
+\include{textuais/capitulo2}
 
-\include{capitulos/capitulo3}
+\include{textuais/capitulo3}
 
-\include{capitulos/capitulo4}
+\include{textuais/capitulo4}
 
-\include{capitulos/capitulo5}
+\include{textuais/capitulo5}
 
-\include{capitulos/capitulo6}
+\include{textuais/capitulo6}
 
 
 % ----------------------------------------------------------
